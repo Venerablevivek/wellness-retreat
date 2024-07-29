@@ -94,7 +94,7 @@ const getData = async() =>{
             }
 
             {
-                !loading && (
+                !loading && filteredData.length>0 && (
                     <div className=' w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[80px] gap-8 ' >
                 {
                     filteredData?.map((retreat,ind)=>(             
@@ -137,12 +137,9 @@ const getData = async() =>{
                 )
             }
 
-            {/* <Pagination
-        retreatsPerPage={retreatsPerPage}
-        totalRetreats={filteredData?.length}
-        paginate={paginate}
-        currentPage={currentPage}
-      /> */}
+                {
+                    !loading && filteredData.length===0 && (<p className=' text-center text-2xl font-semibold text-gray-800 ' >No Data Available</p>)
+                }
 
     </div>
   )
