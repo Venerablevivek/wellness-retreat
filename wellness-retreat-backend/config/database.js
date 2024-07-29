@@ -7,7 +7,9 @@ const pool = new Pool({
   database: 'wellness_retreat',
   password: 'vivek',
   port: 5432,
-  "dialect": "postgres"
+  "dialect": "postgres",
+  entities: [__dirname + '/../**/*.entity.js'],
+  synchronize: true,
 });
 
 module.exports = pool;
