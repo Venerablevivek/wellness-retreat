@@ -1,6 +1,6 @@
 # Wellness Retreat
 
-###### You can check deployed frontend project link - [https://wellness-retreat-vivek.netlify.app/](#https://wellness-retreat-vivek.netlify.app/)
+###### You can check deployed frontend project link - https://wellness-retreat-vivek.netlify.app/
 
 ##### Guide to Clone and Run this project
 
